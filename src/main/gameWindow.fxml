@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="sceneId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="600.0" onKeyPressed="#keyPressed" prefHeight="660.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.gameController">
+   <children>
+      <Label text="Score" textAlignment="CENTER" StackPane.alignment="CENTER_LEFT">
+         <StackPane.margin>
+            <Insets bottom="330.0" left="41.5" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" text="0" StackPane.alignment="CENTER_LEFT">
+         <StackPane.margin>
+            <Insets bottom="285.0" left="41.5" />
+         </StackPane.margin>
+      </Label>
+      <Label layoutX="446.0" layoutY="332.0" text="Level" StackPane.alignment="CENTER_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="330.0" right="41.5" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="level" text="0" StackPane.alignment="CENTER_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="285.0" right="41.5" />
+         </StackPane.margin>
+      </Label>
+      <ImageView fx:id="boardId" fitHeight="631.0" fitWidth="631.0" onKeyPressed="#keyPressed" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+      <Canvas fx:id="canvasId" height="631.0" onKeyPressed="#keyPressed" width="631.0" StackPane.alignment="CENTER" />
+      <Label fx:id="enter" text="Press ENTER to start, play with arrows" textFill="#b20000">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="55.0" />
+         </StackPane.margin>
+         <effect>
+            <Glow level="0.4" />
+         </effect>
+      </Label>
+   </children>
+</StackPane>

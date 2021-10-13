@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="600.0" prefHeight="660.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <Label fx:id="mainLabel1" text="Label" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="40.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="mainButton3" mnemonicParsing="false" text="Button" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="410.0" />
+         </StackPane.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainButton2" mnemonicParsing="false" onAction="#mainButton2Clicked" text="Button" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="300.0" />
+         </StackPane.margin>
+      </Button>
+      <Button fx:id="mainButton1" mnemonicParsing="false" text="Button" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="190.0" />
+         </StackPane.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</StackPane>
